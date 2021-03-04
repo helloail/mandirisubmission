@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import Foundation
 
 // MARK: - CategoryElement
 struct CategoryModel: Codable, Equatable, Identifiable {

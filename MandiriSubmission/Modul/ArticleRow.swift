@@ -36,8 +36,7 @@ extension ArticleRow {
                         .foregroundColor(.gray)
                         .padding(.bottom, 10)
                 }
-                
-                
+                                
             }
             
             Text(data.articleDescription ?? "")

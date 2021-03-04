@@ -9,12 +9,12 @@ import Foundation
 import SwiftUI
 import WebKit
 
-struct WebViewLoader : UIViewRepresentable  {
+struct WebViewLoader: UIViewRepresentable {
    
-    var url : String
+    var url: String
     
-    func makeUIView(context : Context) -> WKWebView {
-        guard let url = URL(string : self.url) else {
+    func makeUIView(context: Context) -> WKWebView {
+        guard let url = URL(string: self.url) else {
             return WKWebView()
         }
         

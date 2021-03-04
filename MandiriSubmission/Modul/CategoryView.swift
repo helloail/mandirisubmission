@@ -35,13 +35,12 @@ struct CategoryViews: View {
     
 }
 
-
 extension CategoryViews {
     
     var content: some View {
         ScrollView {
             ForEach(self.categoryVM.categorylist, id: \.categoryName) { categoryResult in
-                NavigationLink(destination: SourcesViews(category: categoryResult.categoryName ?? "")){
+                NavigationLink(destination: SourcesViews(category: categoryResult.categoryName ?? "")) {
                     CategoryRow(data: categoryResult)
                         .onAppear { self.listItemAppears(categoryResult) }
                 }.buttonStyle(PlainButtonStyle())
@@ -53,7 +52,7 @@ extension CategoryViews {
 extension CategoryViews {
     
     func listItemAppears<Item: Identifiable>(_ item: Item) {
-        if categoryVM.categorylist.isLastItem(item){
+        if categoryVM.categorylist.isLastItem(item) {
             print("last")
         }
     }

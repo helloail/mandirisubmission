@@ -17,12 +17,10 @@ struct CategoryRow: View {
         .frame(width: UIScreen.main.bounds.width - 32, height: 250)
         .background(Color.gray.opacity(0.3))
         .cornerRadius(30)
-        
-        
+    
     }
     
 }
-
 
 extension CategoryRow {
     

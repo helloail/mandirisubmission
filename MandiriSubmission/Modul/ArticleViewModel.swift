@@ -20,15 +20,14 @@ class ArticleViewModel: ObservableObject {
         
     }
     
-    func fetchArticleExecute(sourcename : String) {
+    func fetchArticleExecute(sourcename: String) {
         
-        self.articleservice.catchArticleList(key : sourcename) { [weak self] result in
+        self.articleservice.catchArticleList(key: sourcename) { [weak self] result in
             
             switch result {
             
             case .success(let result) :
            
-                
                 DispatchQueue.main.async {
                     guard let data = result.articles else {
                         return
@@ -37,7 +36,7 @@ class ArticleViewModel: ObservableObject {
                     
                     if (self?.articlelist.count)! < 1 {
                         self?.state = .empty
-                    }else {
+                    } else {
                         self?.state = .loaded
                     }
                 }

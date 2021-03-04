@@ -8,18 +8,17 @@
 import SwiftUI
 
 struct ArticleDetail: View {
-    @Binding var isPresenting : Bool
-    @Binding var url : String 
+    @Binding var isPresenting: Bool
+    @Binding var url: String
     
     var body: some View {
-        VStack(alignment: .leading){
+        VStack(alignment: .leading) {
             
             Button(action: {
                 self.isPresenting = false
                 
-            }
-            ,label: {
-                HStack{
+            }, label: {
+                HStack {
                     Image(systemName: "xmark")
                     Text("Close")
                 }

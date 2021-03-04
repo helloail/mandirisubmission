@@ -11,11 +11,6 @@ import Foundation
 struct SourcesModel: Codable {
     var status: String?
     var sources: [Source]?
-
-    enum CodingKeys: String, CodingKey {
-        case status = "status"
-        case sources = "sources"
-    }
 }
 
 // MARK: - Source

@@ -7,7 +7,6 @@
 
 import XCTest
 
-
 @testable import MandiriSubmission
 class ArticleViewModelTest: XCTestCase {
 

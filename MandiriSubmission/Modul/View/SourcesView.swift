@@ -13,7 +13,7 @@ struct SourcesViews: View {
     @ObservedObject var sourcesVM: SourcesViewModel = SourcesViewModel()
     @State var searchText = ""
     @State private var isEditing = false
-    var category : String
+    var category: String
     
     var body: some View {
         
@@ -50,14 +50,16 @@ extension SourcesViews {
     
     var content: some View {
         ScrollView {
-            searchhelper(searchText: $searchText, isEditing: isEditing)
+            SearchHelper(searchText: $searchText, isEditing: isEditing)
             
             ForEach(self.sourcesVM.sourcelist, id: \.id) { sourceResult in
                 
                 if sourceResult.name.localizedCaseInsensitiveContains(searchText) || searchText == ""{
-                    NavigationLink(destination: ArticleView(category: sourceResult.id )){
-                        SourceRow(data: sourceResult).onAppear
-                        { self.listItemAppears(sourceResult) }
+                    NavigationLink(destination: ArticleView(category: sourceResult.id )) {
+                        SourceRow(data: sourceResult).onAppear {
+                            self.listItemAppears(sourceResult)
+                        
+                        }
                     }
                 }
             }
@@ -70,7 +72,7 @@ extension SourcesViews {
 extension SourcesViews {
     
     func listItemAppears<Item: Identifiable>(_ item: Item) {
-        if sourcesVM.sourcelist.isLastItem(item){
+        if sourcesVM.sourcelist.isLastItem(item) {
             print("last")
         }
     }

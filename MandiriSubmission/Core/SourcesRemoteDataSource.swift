@@ -8,12 +8,12 @@
 import Foundation
 
 protocol SourcesRemoteDataSourceProtocol {
-    func catchSourcesList(key : String, completion: @escaping ((Swift.Result<SourcesModel, Error>) -> Void))
+    func catchSourcesList(key: String, completion: @escaping ((Swift.Result<SourcesModel, Error>) -> Void))
 }
 
 class SourcesRemoteDataSource: SourcesRemoteDataSourceProtocol {
     
-    func catchSourcesList(key : String,completion: @escaping ((Swift.Result<SourcesModel, Error>) -> Void)) {
+    func catchSourcesList(key: String, completion: @escaping ((Swift.Result<SourcesModel, Error>) -> Void)) {
         
         guard let urlString = ("\(Endpoints.Gets.sources.url)category=\(key)&apiKey=c6bb0e644b134a8aa11e463d99fa915f") as? String  else {
             return

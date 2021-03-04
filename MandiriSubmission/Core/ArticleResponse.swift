@@ -13,15 +13,10 @@ struct ArticleModel: Codable {
     var totalResults: Int?
     var articles: [Articles]?
 
-    enum CodingKeys: String, CodingKey {
-        case status = "status"
-        case totalResults = "totalResults"
-        case articles = "articles"
-    }
 }
 
 // MARK: - Article
-struct Articles: Codable,Identifiable,Equatable {
+struct Articles: Codable, Identifiable, Equatable {
     let id = UUID()
     let author: String?
     let title: String
@@ -41,4 +36,3 @@ struct Articles: Codable,Identifiable,Equatable {
         case content = "content"
     }
 }
-

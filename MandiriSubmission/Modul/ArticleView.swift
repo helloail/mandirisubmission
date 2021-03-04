@@ -16,7 +16,7 @@ struct ArticleView: View {
     @State var searchText = ""
     @State private var isEditing = false
     
-    var category : String
+    var category: String
     
     var body: some View {
         
@@ -53,7 +53,7 @@ extension ArticleView {
     
     var content: some View {
         ScrollView {
-            searchhelper(searchText: $searchText, isEditing: isEditing)
+            SearchHelper(searchText: $searchText, isEditing: isEditing)
             
             ForEach(self.articleVM.articlelist, id: \.title) { articleResult in
                 if articleResult.title.localizedCaseInsensitiveContains(searchText) || searchText == ""{

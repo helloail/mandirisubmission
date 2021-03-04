@@ -19,9 +19,9 @@ class SourcesViewModel: ObservableObject {
         
     }
     
-    func fetchSourceExecute(sourcename : String) {
+    func fetchSourceExecute(sourcename: String) {
         
-        self.sourcesservice.catchSourcesList(key : sourcename) { [weak self] result in
+        self.sourcesservice.catchSourcesList(key: sourcename) { [weak self] result in
             
             switch result {
             
@@ -37,7 +37,7 @@ class SourcesViewModel: ObservableObject {
                     
                     if (self?.sourcelist.count)! < 1 {
                         self?.state = .empty
-                    }else {
+                    } else {
                         self?.state = .loaded
                     }
                 }

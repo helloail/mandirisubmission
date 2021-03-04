@@ -5,7 +5,6 @@
 //  Created by Moh Zinnur Atthufail Addausi on 04/03/21.
 //
 
-
 import XCTest
 @testable import MandiriSubmission
 class MockSourceRemoteDataSource: SourcesRemoteDataSourceProtocol {
