@@ -13,6 +13,7 @@ class ArticleViewModel: ObservableObject {
     @Published private(set) var state = LoadedStateHelper.idle
     @Published var articlelist = [Articles]()
     @Published var url = ""
+    @Published var page = 1
     
     init(articleservice: ArticleRemoteDataSourceProtocol = ArticleRemoteDataSource() ) {
         
@@ -22,7 +23,7 @@ class ArticleViewModel: ObservableObject {
     
     func fetchArticleExecute(sourcename: String) {
         
-        self.articleservice.catchArticleList(key: sourcename) { [weak self] result in
+        self.articleservice.catchArticleList(page: page, key: sourcename) { [weak self] result in
             
             switch result {
             

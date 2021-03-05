@@ -12,6 +12,7 @@ class SourcesViewModel: ObservableObject {
     private var sourcesservice: SourcesRemoteDataSourceProtocol
     @Published private(set) var state = LoadedStateHelper.idle
     @Published var sourcelist = [Source]()
+    @Published var page = 1
     
     init(sourcesservice: SourcesRemoteDataSourceProtocol = SourcesRemoteDataSource() ) {
         
@@ -21,7 +22,7 @@ class SourcesViewModel: ObservableObject {
     
     func fetchSourceExecute(sourcename: String) {
         
-        self.sourcesservice.catchSourcesList(key: sourcename) { [weak self] result in
+        self.sourcesservice.catchSourcesList(page: page, key: sourcename) { [weak self] result in
             
             switch result {
             
@@ -33,8 +34,7 @@ class SourcesViewModel: ObservableObject {
                         return
                     }
                     
-                    self?.sourcelist = data
-                    
+                    self?.sourcelist.append(contentsOf: data)
                     if (self?.sourcelist.count)! < 1 {
                         self?.state = .empty
                     } else {

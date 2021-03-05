@@ -15,11 +15,7 @@ class CategoryRemoteDataSource: CategoryRemoteDataSourceProtocol {
     
     func catchCategoryList( completion: @escaping ((Swift.Result< [CategoryModel], Error>) -> Void)) {
         
-        guard let urlString = ("Category") as? String  else {
-            return
-        }
-        
-        guard let path = Bundle.main.url(forResource: urlString, withExtension: "json") else { return }
+        guard let path = Bundle.main.url(forResource: "Category", withExtension: "json") else { return }
         do {
             let data = try Data(contentsOf: path)
             

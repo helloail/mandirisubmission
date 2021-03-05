@@ -8,12 +8,12 @@
 import Foundation
 
 protocol ArticleRemoteDataSourceProtocol {
-    func catchArticleList(key: String, completion: @escaping ((Swift.Result<ArticleModel, Error>) -> Void))
+    func catchArticleList(page: Int, key: String, completion: @escaping ((Swift.Result<ArticleModel, Error>) -> Void))
 }
 
 class ArticleRemoteDataSource: ArticleRemoteDataSourceProtocol {
     
-    func catchArticleList(key: String, completion: @escaping ((Swift.Result<ArticleModel, Error>) -> Void)) {
+    func catchArticleList(page: Int, key: String, completion: @escaping ((Swift.Result<ArticleModel, Error>) -> Void)) {
         
         guard let urlString = ("\(Endpoints.Gets.article.url)sources=\(key)&apiKey=c6bb0e644b134a8aa11e463d99fa915f") as? String  else {
             return

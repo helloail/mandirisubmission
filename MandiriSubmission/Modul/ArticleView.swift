@@ -42,6 +42,17 @@ struct ArticleView: View {
     }
     
 }
+
+extension ArticleView {
+    
+    func listItemAppears<Item: Identifiable>(_ item: Item) {
+        if articleVM.articlelist.isLastItem(item) {
+            self.articleVM.page += 1
+            self.articleVM.fetchArticleExecute(sourcename: category)
+        }
+    }
+}
+
 extension ArticleView {
     
     var emptyCategories: some View {
@@ -61,7 +72,9 @@ extension ArticleView {
                         self.selectedArticel = articleResult.url ?? ""
                         self.isPresenting.toggle()
                     }, label: {
-                        ArticleRow(data: articleResult)
+                        ArticleRow(data: articleResult).onAppear {
+                            self.listItemAppears(articleResult)
+                        }
                     }).sheet(isPresented: $isPresenting, content: {
                         ArticleDetail(isPresenting: self.$isPresenting, url: self.$selectedArticel)
                     })

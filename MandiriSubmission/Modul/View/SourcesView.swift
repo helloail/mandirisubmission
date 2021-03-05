@@ -58,7 +58,6 @@ extension SourcesViews {
                     NavigationLink(destination: ArticleView(category: sourceResult.id )) {
                         SourceRow(data: sourceResult).onAppear {
                             self.listItemAppears(sourceResult)
-                        
                         }
                     }
                 }
@@ -73,7 +72,8 @@ extension SourcesViews {
     
     func listItemAppears<Item: Identifiable>(_ item: Item) {
         if sourcesVM.sourcelist.isLastItem(item) {
-            print("last")
+            self.sourcesVM.page += 1
+            self.sourcesVM.fetchSourceExecute(sourcename: category)
         }
     }
 }
