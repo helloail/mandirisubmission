@@ -6,7 +6,6 @@
 //
 
 import XCTest
-
 @testable import MandiriSubmission
 class SourceViewModelTest: XCTestCase {
 
