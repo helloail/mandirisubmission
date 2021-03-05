@@ -18,7 +18,7 @@ class MockArticleRemoteDataSource: ArticleRemoteDataSourceProtocol {
         self.catchdataStatus = .success(mockData)
     }
     
-    func catchArticleList(key: String, completion: @escaping ((Result<ArticleModel, Error>) -> Void)) {
+    func catchArticleList(page: Int, key: String, completion: @escaping ((Result<ArticleModel, Error>) -> Void)) {
         
         completion(catchdataStatus)
     }

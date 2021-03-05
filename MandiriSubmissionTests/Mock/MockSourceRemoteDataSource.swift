@@ -18,7 +18,7 @@ class MockSourceRemoteDataSource: SourcesRemoteDataSourceProtocol {
         self.catchdataStatus = .success(mockData)
     }
     
-    func catchSourcesList(key: String, completion: @escaping ((Result<SourcesModel, Error>) -> Void)) {
+    func catchSourcesList(page: Int, key: String, completion: @escaping ((Result<SourcesModel, Error>) -> Void)) {
         
         completion(catchdataStatus)
     }
