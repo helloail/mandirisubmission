@@ -1,4 +1,4 @@
 # mandirisubmission
 
 Architchture -> MVVM,
-CI -> Github Acrtion
+CI -> Github Action
