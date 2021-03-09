@@ -7,8 +7,9 @@
 
 import XCTest
 @testable import MandiriSubmission
+import Sources
 extension ArticleModel {
-    static func load() -> ArticleModel {
+    public static func load() -> ArticleModel {
         return ArticleModel(status: "ok",
                             totalResults: 10,
                             articles: [ Articles(author: "BBC News",

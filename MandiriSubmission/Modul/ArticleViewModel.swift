@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Sources
 
 class ArticleViewModel: ObservableObject {
     
@@ -15,10 +16,9 @@ class ArticleViewModel: ObservableObject {
     @Published var url = ""
     @Published var page = 1
     
-    init(articleservice: ArticleRemoteDataSourceProtocol = ArticleRemoteDataSource() ) {
+     init(articleservice: ArticleRemoteDataSourceProtocol = ArticleRemoteDataSource() ) {
         
         self.articleservice  = articleservice
-        
     }
     
     func fetchArticleExecute(sourcename: String) {
@@ -48,5 +48,4 @@ class ArticleViewModel: ObservableObject {
             }
         }
     }
-    
 }

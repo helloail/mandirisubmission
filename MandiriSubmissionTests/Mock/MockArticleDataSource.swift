@@ -7,7 +7,8 @@
 
 import XCTest
 @testable import MandiriSubmission
-class MockArticleRemoteDataSource: ArticleRemoteDataSourceProtocol {
+import Sources
+public class MockArticleRemoteDataSource: ArticleRemoteDataSourceProtocol {
 
     let mockData: ArticleModel?
     
@@ -18,7 +19,7 @@ class MockArticleRemoteDataSource: ArticleRemoteDataSourceProtocol {
         self.catchdataStatus = .success(mockData)
     }
     
-    func catchArticleList(page: Int, key: String, completion: @escaping ((Result<ArticleModel, Error>) -> Void)) {
+    public func catchArticleList(page: Int, key: String, completion: @escaping ((Result<ArticleModel, Error>) -> Void)) {
         
         completion(catchdataStatus)
     }

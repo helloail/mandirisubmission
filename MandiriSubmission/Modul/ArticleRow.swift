@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftUI
+import Sources
 
 struct ArticleRow: View {
     let data: Articles

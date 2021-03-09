@@ -8,6 +8,8 @@
 import XCTest
 
 @testable import MandiriSubmission
+import Sources
+
 class ArticleViewModelTest: XCTestCase {
 
     func test_NewsViewModel_whenProvideData_thenCountOneItem() {
@@ -26,7 +28,6 @@ class ArticleViewModelTest: XCTestCase {
         DispatchQueue.main.async {
             XCTAssertEqual(viewModel.articlelist.count, 1)
         }
-
     }
 
     func test_NewsViewModel_whenProvideEmptyData_thenZeroItem() {
@@ -44,7 +45,6 @@ class ArticleViewModelTest: XCTestCase {
         DispatchQueue.main.async {
             XCTAssertEqual(viewModel.articlelist.count, 0)
         }
-
     }
 
     func test_NewsViewModel_whenPovideNilData_ThenZeroItem() {
@@ -60,7 +60,6 @@ class ArticleViewModelTest: XCTestCase {
         let viewModel = ArticleViewModel(articleservice: service)
         
         // when
-        
         service.catchdataStatus = .success(expecteddata)
         viewModel.fetchArticleExecute(sourcename: "cnnbc")
         

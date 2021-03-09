@@ -7,6 +7,7 @@
 import Foundation
 import XCTest
 @testable import MandiriSubmission
+@testable import Sources
 
 //class ArticleRemoteDataTest: XCTestCase {
 //    
@@ -29,7 +30,7 @@ import XCTest
 //                    "url": "http://www.bbc.co.uk/news/world-australia-56275063",
 //                    "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/BAF1/production/_117375874_gettyimages-1303416796.jpg",
 //                    "publishedAt": "2021-03-04T02:52:19.7497181Z",
-//                    "content": "image copyrightGetty Images\r\nimage captionLinda Reynolds is reported to have called Brittany Higgins a 'lying cow'\r\nAustralian Prime Minister Scott Morrison has said his defence minister \"deeply regr… [+2679 chars]"
+//                    "content": "image copyrightGetty Images\r\nimage captionLinda"
 //                }
 //            ]
 //        }

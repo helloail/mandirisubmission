@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1403F88D25F737C900447887 /* Sources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1403F88C25F737C900447887 /* Sources.framework */; };
 		14084CCD25EFC94800ECF67E /* CustomEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14084CCC25EFC94800ECF67E /* CustomEmptyView.swift */; };
 		14084CDB25EFE98E00ECF67E /* SearchHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14084CDA25EFE98E00ECF67E /* SearchHelper.swift */; };
 		14084CE625F08AE300ECF67E /* MockCategoryRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14084CE525F08AE300ECF67E /* MockCategoryRemoteDataSource.swift */; };
@@ -46,12 +47,13 @@
 		14BA515125EF60850096EA37 /* SourcesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BA515025EF60850096EA37 /* SourcesViewModel.swift */; };
 		14BA515C25EF62590096EA37 /* SourcesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BA515B25EF62590096EA37 /* SourcesView.swift */; };
 		14BA516425EF6E3C0096EA37 /* ArticleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BA516325EF6E3C0096EA37 /* ArticleRow.swift */; };
-		14BA516E25EF6EAE0096EA37 /* ArticleResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BA516D25EF6EAE0096EA37 /* ArticleResponse.swift */; };
-		14BA517625EF6F490096EA37 /* ArticleRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BA517525EF6F490096EA37 /* ArticleRemoteDataSource.swift */; };
 		14BA517B25EF6FC70096EA37 /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BA517A25EF6FC70096EA37 /* ArticleViewModel.swift */; };
 		14BA518025EF70470096EA37 /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BA517F25EF70470096EA37 /* ArticleView.swift */; };
 		14BA518525EF722F0096EA37 /* LoaderWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BA518425EF722F0096EA37 /* LoaderWebView.swift */; };
 		14BA518A25EF726A0096EA37 /* ArticleDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BA518925EF726A0096EA37 /* ArticleDetail.swift */; };
+		700631C56CB1666C3841B4CC /* Pods_MandiriSubmissionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFACCA1D7FBC7A910B4E6B48 /* Pods_MandiriSubmissionTests.framework */; };
+		77ECD95A2A3C231425355493 /* Pods_MandiriSubmission_MandiriSubmissionUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2F8E62192C10EACFB5E2511 /* Pods_MandiriSubmission_MandiriSubmissionUITests.framework */; };
+		886E8C12DFE477B8232FBD02 /* Pods_MandiriSubmission.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 836047B378B0A3FA7BF14D58 /* Pods_MandiriSubmission.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +74,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1403F88C25F737C900447887 /* Sources.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Sources.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14084CCC25EFC94800ECF67E /* CustomEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomEmptyView.swift; sourceTree = "<group>"; };
 		14084CDA25EFE98E00ECF67E /* SearchHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHelper.swift; sourceTree = "<group>"; };
 		14084CE525F08AE300ECF67E /* MockCategoryRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCategoryRemoteDataSource.swift; sourceTree = "<group>"; };
@@ -117,12 +120,19 @@
 		14BA515025EF60850096EA37 /* SourcesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourcesViewModel.swift; sourceTree = "<group>"; };
 		14BA515B25EF62590096EA37 /* SourcesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourcesView.swift; sourceTree = "<group>"; };
 		14BA516325EF6E3C0096EA37 /* ArticleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleRow.swift; sourceTree = "<group>"; };
-		14BA516D25EF6EAE0096EA37 /* ArticleResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleResponse.swift; sourceTree = "<group>"; };
-		14BA517525EF6F490096EA37 /* ArticleRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleRemoteDataSource.swift; sourceTree = "<group>"; };
 		14BA517A25EF6FC70096EA37 /* ArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewModel.swift; sourceTree = "<group>"; };
 		14BA517F25EF70470096EA37 /* ArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleView.swift; sourceTree = "<group>"; };
 		14BA518425EF722F0096EA37 /* LoaderWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderWebView.swift; sourceTree = "<group>"; };
 		14BA518925EF726A0096EA37 /* ArticleDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetail.swift; sourceTree = "<group>"; };
+		6872004A155FFA4B74291CF7 /* Pods-MandiriSubmission-MandiriSubmissionUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MandiriSubmission-MandiriSubmissionUITests.release.xcconfig"; path = "Target Support Files/Pods-MandiriSubmission-MandiriSubmissionUITests/Pods-MandiriSubmission-MandiriSubmissionUITests.release.xcconfig"; sourceTree = "<group>"; };
+		836047B378B0A3FA7BF14D58 /* Pods_MandiriSubmission.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MandiriSubmission.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2F8E62192C10EACFB5E2511 /* Pods_MandiriSubmission_MandiriSubmissionUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MandiriSubmission_MandiriSubmissionUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0F02B2ED5F0751F7128EE3C /* Pods-MandiriSubmission.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MandiriSubmission.debug.xcconfig"; path = "Target Support Files/Pods-MandiriSubmission/Pods-MandiriSubmission.debug.xcconfig"; sourceTree = "<group>"; };
+		C4B5CD66EC8197DBBE1109BD /* Pods-MandiriSubmissionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MandiriSubmissionTests.debug.xcconfig"; path = "Target Support Files/Pods-MandiriSubmissionTests/Pods-MandiriSubmissionTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D11053A555A00CFA06F8C94B /* Pods-MandiriSubmission.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MandiriSubmission.release.xcconfig"; path = "Target Support Files/Pods-MandiriSubmission/Pods-MandiriSubmission.release.xcconfig"; sourceTree = "<group>"; };
+		E1322A34D6A50E12AB2C64D9 /* Pods-MandiriSubmissionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MandiriSubmissionTests.release.xcconfig"; path = "Target Support Files/Pods-MandiriSubmissionTests/Pods-MandiriSubmissionTests.release.xcconfig"; sourceTree = "<group>"; };
+		EA789F775E599C4AB5BF2ADE /* Pods-MandiriSubmission-MandiriSubmissionUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MandiriSubmission-MandiriSubmissionUITests.debug.xcconfig"; path = "Target Support Files/Pods-MandiriSubmission-MandiriSubmissionUITests/Pods-MandiriSubmission-MandiriSubmissionUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FFACCA1D7FBC7A910B4E6B48 /* Pods_MandiriSubmissionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MandiriSubmissionTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +140,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1403F88D25F737C900447887 /* Sources.framework in Frameworks */,
+				886E8C12DFE477B8232FBD02 /* Pods_MandiriSubmission.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +149,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				700631C56CB1666C3841B4CC /* Pods_MandiriSubmissionTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +157,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77ECD95A2A3C231425355493 /* Pods_MandiriSubmission_MandiriSubmissionUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,6 +206,8 @@
 				14BA50BE25EF485F0096EA37 /* MandiriSubmissionTests */,
 				14BA50C925EF485F0096EA37 /* MandiriSubmissionUITests */,
 				14BA50A625EF485D0096EA37 /* Products */,
+				C3DE0675472A7254E162E8E5 /* Pods */,
+				BC3C39EA1FD5151BEAC9FAC7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -297,7 +313,6 @@
 		14BA50E525EF4B730096EA37 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				14BA516B25EF6E920096EA37 /* Article */,
 				14BA512D25EF5F6A0096EA37 /* Sources */,
 				14BA50E625EF4B7C0096EA37 /* Category */,
 			);
@@ -430,21 +445,28 @@
 			name = ViewModel;
 			sourceTree = "<group>";
 		};
-		14BA516B25EF6E920096EA37 /* Article */ = {
+		BC3C39EA1FD5151BEAC9FAC7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				14BA516C25EF6E9C0096EA37 /* Response */,
-				14BA517525EF6F490096EA37 /* ArticleRemoteDataSource.swift */,
+				1403F88C25F737C900447887 /* Sources.framework */,
+				836047B378B0A3FA7BF14D58 /* Pods_MandiriSubmission.framework */,
+				A2F8E62192C10EACFB5E2511 /* Pods_MandiriSubmission_MandiriSubmissionUITests.framework */,
+				FFACCA1D7FBC7A910B4E6B48 /* Pods_MandiriSubmissionTests.framework */,
 			);
-			name = Article;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		14BA516C25EF6E9C0096EA37 /* Response */ = {
+		C3DE0675472A7254E162E8E5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				14BA516D25EF6EAE0096EA37 /* ArticleResponse.swift */,
+				B0F02B2ED5F0751F7128EE3C /* Pods-MandiriSubmission.debug.xcconfig */,
+				D11053A555A00CFA06F8C94B /* Pods-MandiriSubmission.release.xcconfig */,
+				EA789F775E599C4AB5BF2ADE /* Pods-MandiriSubmission-MandiriSubmissionUITests.debug.xcconfig */,
+				6872004A155FFA4B74291CF7 /* Pods-MandiriSubmission-MandiriSubmissionUITests.release.xcconfig */,
+				C4B5CD66EC8197DBBE1109BD /* Pods-MandiriSubmissionTests.debug.xcconfig */,
+				E1322A34D6A50E12AB2C64D9 /* Pods-MandiriSubmissionTests.release.xcconfig */,
 			);
-			name = Response;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -454,10 +476,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 14BA50CF25EF485F0096EA37 /* Build configuration list for PBXNativeTarget "MandiriSubmission" */;
 			buildPhases = (
+				9921DDD3697EB29077D8BB49 /* [CP] Check Pods Manifest.lock */,
 				14BA50A125EF485D0096EA37 /* Sources */,
 				14BA50A225EF485D0096EA37 /* Frameworks */,
 				14BA50A325EF485D0096EA37 /* Resources */,
 				14084D4825F1093800ECF67E /* SwiftLint */,
+				88A29C1B2CA9BE27A3FE3A57 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -472,6 +496,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 14BA50D225EF485F0096EA37 /* Build configuration list for PBXNativeTarget "MandiriSubmissionTests" */;
 			buildPhases = (
+				797D374ED783B209F884902D /* [CP] Check Pods Manifest.lock */,
 				14BA50B725EF485F0096EA37 /* Sources */,
 				14BA50B825EF485F0096EA37 /* Frameworks */,
 				14BA50B925EF485F0096EA37 /* Resources */,
@@ -490,9 +515,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 14BA50D525EF485F0096EA37 /* Build configuration list for PBXNativeTarget "MandiriSubmissionUITests" */;
 			buildPhases = (
+				61AE6746D3E94064E6B52843 /* [CP] Check Pods Manifest.lock */,
 				14BA50C225EF485F0096EA37 /* Sources */,
 				14BA50C325EF485F0096EA37 /* Frameworks */,
 				14BA50C425EF485F0096EA37 /* Resources */,
+				41E313E4F24652C71FBDA236 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -594,6 +621,106 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then \n    swiftlint \nelse \n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\" \nfi\n";
 		};
+		41E313E4F24652C71FBDA236 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MandiriSubmission-MandiriSubmissionUITests/Pods-MandiriSubmission-MandiriSubmissionUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MandiriSubmission-MandiriSubmissionUITests/Pods-MandiriSubmission-MandiriSubmissionUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MandiriSubmission-MandiriSubmissionUITests/Pods-MandiriSubmission-MandiriSubmissionUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61AE6746D3E94064E6B52843 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MandiriSubmission-MandiriSubmissionUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		797D374ED783B209F884902D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MandiriSubmissionTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88A29C1B2CA9BE27A3FE3A57 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MandiriSubmission/Pods-MandiriSubmission-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MandiriSubmission/Pods-MandiriSubmission-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MandiriSubmission/Pods-MandiriSubmission-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9921DDD3697EB29077D8BB49 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MandiriSubmission-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -608,7 +735,6 @@
 				14BA512F25EF5F7C0096EA37 /* SourcesRemoteDataSource.swift in Sources */,
 				14BA510125EF4E330096EA37 /* CategoryViewModel.swift in Sources */,
 				14BA518025EF70470096EA37 /* ArticleView.swift in Sources */,
-				14BA517625EF6F490096EA37 /* ArticleRemoteDataSource.swift in Sources */,
 				14BA516425EF6E3C0096EA37 /* ArticleRow.swift in Sources */,
 				14BA517B25EF6FC70096EA37 /* ArticleViewModel.swift in Sources */,
 				14BA50A925EF485D0096EA37 /* AppDelegate.swift in Sources */,
@@ -627,7 +753,6 @@
 				14BA515C25EF62590096EA37 /* SourcesView.swift in Sources */,
 				14BA50AD25EF485D0096EA37 /* ContentView.swift in Sources */,
 				14BA513B25EF5FB00096EA37 /* SourcesResponse.swift in Sources */,
-				14BA516E25EF6EAE0096EA37 /* ArticleResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -803,6 +928,7 @@
 		};
 		14BA50D025EF485F0096EA37 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0F02B2ED5F0751F7128EE3C /* Pods-MandiriSubmission.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -824,6 +950,7 @@
 		};
 		14BA50D125EF485F0096EA37 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D11053A555A00CFA06F8C94B /* Pods-MandiriSubmission.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -845,6 +972,7 @@
 		};
 		14BA50D325EF485F0096EA37 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4B5CD66EC8197DBBE1109BD /* Pods-MandiriSubmissionTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -867,6 +995,7 @@
 		};
 		14BA50D425EF485F0096EA37 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1322A34D6A50E12AB2C64D9 /* Pods-MandiriSubmissionTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -889,6 +1018,7 @@
 		};
 		14BA50D625EF485F0096EA37 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA789F775E599C4AB5BF2ADE /* Pods-MandiriSubmission-MandiriSubmissionUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -909,6 +1039,7 @@
 		};
 		14BA50D725EF485F0096EA37 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6872004A155FFA4B74291CF7 /* Pods-MandiriSubmission-MandiriSubmissionUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
